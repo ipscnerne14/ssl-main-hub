@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>加拿大28 · 专题介绍</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f8f5f0;
+            font-family: 'Georgia', 'Times New Roman', '宋体', serif;
+            color: #2d2a24;
+            line-height: 1.8;
+            padding: 0 1.5rem;
+        }
+
+        .page {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2.5rem 0 4rem 0;
+        }
+
+        /* hero 横幅 */
+        .hero {
+            background: #eae5db;
+            padding: 3rem 2rem 2.8rem 2rem;
+            border-left: 6px solid #b3a187;
+            margin-bottom: 2.8rem;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .hero h1 {
+            font-size: 2.4rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            color: #3f382f;
+            margin-bottom: 0.6rem;
+        }
+
+        .hero .sub {
+            font-size: 1rem;
+            color: #6b6257;
+            border-top: 1px solid #cbc3b6;
+            padding-top: 1rem;
+            display: inline-block;
+        }
+
+        /* 背景说明 - 引用块 */
+        .bkg-box {
+            background: #f0ece4;
+            padding: 1.8rem 2rem;
+            margin: 2.2rem 0 2.8rem 0;
+            border-radius: 4px;
+            border-left: 4px solid #8f846f;
+            font-style: normal;
+            color: #3b362e;
+        }
+
+        .bkg-box strong {
+            color: #2f2a22;
+        }
+
+        /* 文章段落排版 */
+        .content-section {
+            margin-bottom: 2.5rem;
+        }
+
+        .content-section h2 {
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: #4a4237;
+            border-bottom: 1px solid #dad3c8;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.2rem;
+            letter-spacing: 0.3px;
+        }
+
+        .content-section p {
+            margin-bottom: 1.2rem;
+            text-align: justify;
+        }
+
+        .content-section p:last-child {
+            margin-bottom: 0;
+        }
+
+        .inline-link {
+            color: #8a6f4b;
+            text-decoration: none;
+            border-bottom: 1px dotted #b7a48c;
+            transition: border 0.2s, color 0.2s;
+        }
+
+        .inline-link:hover {
+            color: #4d3e2b;
+            border-bottom: 1px solid #4d3e2b;
+        }
+
+        /* 信息卡/提示框 */
+        .tip-box {
+            background: #eae5db;
+            padding: 1.6rem 2rem;
+            margin: 2.2rem 0;
+            border-radius: 8px;
+            border: 1px solid #d6cdbf;
+        }
+
+        .tip-box h3 {
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: #3f382f;
+            margin-bottom: 0.8rem;
+        }
+
+        .tip-box ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .tip-box li {
+            padding: 0.25rem 0 0.25rem 1.6rem;
+            position: relative;
+        }
+
+        .tip-box li::before {
+            content: "—";
+            position: absolute;
+            left: 0;
+            color: #a08970;
+        }
+
+        /* FAQ 摘要（杂志式简列） */
+        .faq-mini {
+            margin: 2.8rem 0 2rem 0;
+            border-top: 1px solid #d6cdbf;
+            padding-top: 1.8rem;
+        }
+
+        .faq-mini h3 {
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: #3f382f;
+            margin-bottom: 1rem;
+        }
+
+        .faq-item {
+            margin-bottom: 1.2rem;
+        }
+
+        .faq-item .q {
+            font-weight: 600;
+            color: #4a4237;
+        }
+
+        .faq-item .a {
+            margin-left: 1rem;
+            color: #5a5246;
+        }
+
+        /* 页尾访问提示 */
+        .footer-note {
+            margin-top: 3.5rem;
+            padding: 1.8rem 2rem;
+            background: #eae5db;
+            text-align: center;
+            border-radius: 4px;
+            color: #3b362e;
+            border: 1px solid #d6cdbf;
+        }
+
+        .footer-note p {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-note .large-link {
+            font-size: 1.3rem;
+            font-weight: 500;
+        }
+
+        .footer-note .large-link a {
+            color: #6f5d3f;
+            text-decoration: none;
+            border-bottom: 2px solid #b7a48c;
+            transition: border 0.2s;
+        }
+
+        .footer-note .large-link a:hover {
+            border-bottom: 2px solid #4d3e2b;
+        }
+
+        /* 响应式 */
+        @media (max-width: 600px) {
+            body {
+                padding: 0 1rem;
+            }
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            .hero {
+                padding: 2rem 1.2rem;
+            }
+            .bkg-box,
+            .tip-box,
+            .footer-note {
+                padding: 1.4rem 1.2rem;
+            }
+            .content-section h2 {
+                font-size: 1.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+
+    <!-- hero -->
+    <div class="hero">
+        <h1>加拿大28 · 日常查览</h1>
+        <div class="sub">对照 · 延伸 · 信息密度</div>
+    </div>
+
+    <!-- 背景说明（引用块） -->
+    <div class="bkg-box">
+        <strong>背景</strong> — 加拿大28 是一种基于数字排列的参考体系，其数据由特定算法与公开参数共同生成。日常使用中，用户常将其作为一种对照工具，用于观察数字趋势或进行快速参照。它并非预测工具，而是提供一种可追溯的、结构化的数字呈现方式。
+    </div>
+
+    <!-- 三段自然介绍 -->
+    <div class="content-section">
+        <h2>查询与对照</h2>
+        <p>
+            对许多使用者而言，日常查看 <a href="https://panel-canada28.com" class="inline-link">加拿大28</a> 的过程类似于翻阅一份定期更新的数字简报。每一期数据都包含固定的区间与组合，用户可以根据自身习惯将其与历史记录并列对比，从而形成对数字分布的直观感受。这种对照不依赖复杂模型，更多是基于重复观察形成的个人经验。
+        </p>
+        <p>
+            在具体操作中，人们通常关注数字的跨度、奇偶比例以及边缘数值的出现频率。这些信息本身并不代表任何确定性结论，但可以为后续的延伸讨论提供素材。平台面板以简洁的列表形式呈现每期数据，方便快速浏览与标记。
+        </p>
+    </div>
+
+    <div class="content-section">
+        <h2>延伸阅读场景</h2>
+        <p>
+            除了基础查询，部分用户会将加拿大28 的数据用于更宽泛的观察场景。例如，结合不同时段的数据集，观察某些数值区间的活跃程度是否发生变化；或者将多期结果整理为简易统计表，用于个人笔记中的趋势备注。这些工作本质上属于信息整理范畴，与概率或预测无关。
+        </p>
+        <p>
+            平台本身不提供分析建议或策略引导，仅作为数据展示与存档的入口。用户基于自身需求对数据进行二次加工时，应保持客观态度，不赋予数字超出其范围的解释。信息的价值在于清晰呈现，而非过度解读。
+        </p>
+    </div>
+
+    <div class="content-section">
+        <h2>参考与边界</h2>
+        <p>
+            任何数字参考体系都有其适用的边界。加拿大28 的数据基于既定规则生成，其结果不反映现实事件，也不构成任何形式的建议。使用者应当将其视为一种结构化的数字序列，而非行为依据。在延伸阅读或讨论时，建议保持必要的克制与理性。
+        </p>
+        <p>
+            日常对照过程中，记录个人观察即可，不必追求所谓“规律”或“周期”。数字的排列本身具有随机性特征，长期观察更多是为了熟悉数据形态，而非寻找确定性。保持对信息边界的认知，是有效使用此类工具的前提。
+        </p>
+    </div>
+
+    <!-- 提示框：特点摘要 -->
+    <div class="tip-box">
+        <h3>特点摘要</h3>
+        <ul>
+            <li>每期数据由固定数字区间构成，格式统一</li>
+            <li>支持历史结果回溯，便于纵向对照</li>
+            <li>无附加评论或预测内容，保持数据中性</li>
+            <li>面板设计偏向信息型，减少视觉干扰</li>
+        </ul>
+    </div>
+
+    <!-- FAQ 摘要（杂志式） -->
+    <div class="faq-mini">
+        <h3>常见疑问 · 简答</h3>
+        <div class="faq-item">
+            <div class="q">问：加拿大28 的数据可以用来做什么？</div>
+            <div class="a">答：主要用于日常查询与个人对照，作为一种数字参考，不用于决策依据。</div>
+        </div>
+        <div class="faq-item">
+            <div class="q">问：数据更新频率如何？</div>
+            <div class="a">答：平台按固定周期发布最新数据，用户可参照时间轴浏览。</div>
+        </div>
+        <div class="faq-item">
+            <div class="q">问：是否提供历史统计图表？</div>
+            <div class="a">答：面板以文本列表为主，用户可根据需要自行整理可视化内容。</div>
+        </div>
+    </div>
+
+    <!-- 页尾访问提示 -->
+    <div class="footer-note">
+        <p>如需查阅最新数据序列，可前往</p>
+        <div class="large-link">
+            <a href="https://panel-canada28.com">加拿大28</a>
+        </div>
+        <p style="margin-top: 0.6rem; font-size: 0.9rem; color: #6b6257;">定期更新 · 数字对照 · 信息延伸</p>
+    </div>
+
+</div>
+</body>
+</html>
